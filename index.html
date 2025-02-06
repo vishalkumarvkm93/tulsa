@@ -307,8 +307,8 @@
     .company-partners-container span {
         position: absolute;
         color: #fff;
-        min-width: 25%;
-        margin: 0 10px;
+        /* min-width: 25%; */
+        margin: 0 50px!important;
         height: 75%;
         left: 100%;
         background-color: #fff;
@@ -363,6 +363,35 @@
             left: -100%;
         }
     }
+
+
+
+    .slider-container2 {
+            width: 100%;
+            overflow: hidden;
+            background: white;
+            padding: 20px 0;
+            position: relative;
+            white-space: nowrap;
+        }
+        .slider-container2 .slider {
+            display: flex;
+            width: max-content;
+            animation: slide 10s linear infinite;
+        }
+        .slider-container2 .slider img {
+            width: 150px;
+            height: auto;
+            margin: 0 59px;
+        }
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
 </style>
 
 <body>
@@ -503,14 +532,24 @@
         </div>
     </section>
 
-    <div class="company-partners-container">
-        <span><img src="akuvox.png" alt=""></span>
-        <span><img src="grandstream.png" alt=""></span>
-        <span><img src="hikvision.png" alt=""></span>
-        <span><img src="honeywell.png" alt=""></span>
-        <span><img src="netgear.png" alt=""></span>
-        <span><img src="schrack.png" alt=""></span>
-        <span><img src="unv.png" alt=""></span>
+    <div class="slider-container2">
+        <div class="slider">
+            <img src="akuvox.png" alt="Partner 1">
+            <img src="grandstream.png" alt="Partner 2">
+            <img src="hikvision.png" alt="Partner 3">
+            <img src="honeywell.png" alt="Partner 4">
+            <img src="netgear.png" alt="Partner 5">
+            <img src="schrack.png" alt="Partner 5">
+            <img src="unv.png" alt="Partner 5">
+            <!-- Duplicate for seamless loop -->
+            <img src="akuvox.png" alt="Partner 1">
+            <img src="grandstream.png" alt="Partner 2">
+            <img src="hikvision.png" alt="Partner 3">
+            <img src="honeywell.png" alt="Partner 4">
+            <img src="netgear.png" alt="Partner 5">
+            <img src="schrack.png" alt="Partner 5">
+            <img src="unv.png" alt="Partner 5">
+        </div>
     </div>
     <footer class="footer">
         <div class="footer-container">
