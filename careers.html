@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your page description here for better SEO">
+    <meta name="keywords" content="SEO, HTML, structure, website, optimization">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="A brief description of your page content">
+    <meta property="og:image" content="URL_to_image">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta name="robots" content="index, follow">
+    <title>TULSA - AUTOMATION</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon for the website -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Structured Data (JSON-LD) for better SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Your Page Title",
+            "url": "https://www.yourwebsite.com",
+            "description": "A brief description of your page content"
+        }
+    </script>
+</head>
+
+<style>
+    #career{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: var(--font-family);
+        overflow: hidden;
+        color: #5b5b5b;
+        background: linear-gradient(359deg, white, #a8d1ff);
+    }
+    #career .heading h1{
+        font-size: 80px;
+        /* word-break: break-word; */
+        /* width: 100px; */
+        /* line-height: 100px; */
+    }
+     /* #career .main-jobs .job */
+     #career .job-png img{
+        width: 600px;
+    }
+    #jobs{
+        font-family: var(--font-family);
+    }
+    #jobs .main-jobs .job{
+        margin-bottom: 30px;
+    }
+    #jobs .main-jobs .job .job-title{
+        font-size: 25px;
+    }
+    #jobs{
+        display: block;
+        padding: 30px 70px;
+    }
+    #jobs h1{
+        font-size: 40px;
+    }
+   
+
+   @media screen and (max-width: 1258px){
+    
+    #career{
+        flex-direction: column;
+    }
+    
+    #career .heading{
+        margin-top: 40px;
+    }
+   }
+   @media screen and (max-width: 1258px){
+    #career .heading h1{
+        font-size: 60px;
+    }
+    #career .job-png img{
+        width: 100%
+    }
+   }
+   @media screen and (max-width: 493px){
+    #career .heading h1{
+        font-size: 40px;
+    }
+    #jobs{
+        display: block;
+        padding: 30px 10px;
+    }
+   }
+</style>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="tulsa">
+                    TULSA
+                </div>
+                <p>AUTOMATION</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="accesscontrol.html">Access Control</a></li>
+                    <li><a href="advancedsystem.html">Advanced System</a></li>
+                    <li><a href="aitechnology.html">AI Technology</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+
+            <button id="navbar-btn"><img src="navigation-bar.png" alt=""></button>
+        </div>
+    </header>
+
+    <section id="career">
+       <div class="heading">
+        <h1>Career With Us</h1>
+       </div>
+        <div class="job-png">
+            <img src="career.png" alt="">
+        </div>
+    </section>
+
+    <section id="jobs">
+        <h1>Jobs:</h1>
+        <div class="main-jobs">
+            <div class="job">
+                <h2 class="job-title">Sales Executive</h2>
+                <h4>Requirements:</h4>
+                <ul>
+                    <li>Graduate or finance diploma</li>
+                    <li>Freshers can also apply</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h2 class="job-title">Technical Project Engineer</h2>
+                <h4>Requirements:</h4>
+                <ul>
+                    <li>B.Tech electronics relevant diploma</li>
+                    <li>Freshers can also apply</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Sco 32-33 & 34 2nd floor, Idea cowork,
+                    Near to DC Office, next to Axis Bank, 17C,
+                    Sector 17, Chandigarh, 160017
+
+                    </p>
+                    <p>Official Email:  tulsallp@gmail.com</p>
+                    <p>Email:  manjot@tulsa.co.in</p>
+                <p>Phone: 62835-25403</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="accesscontrol.html">Access Control</a></li>
+                    <li><a href="advancedsystem.html">Advanced System</a></li>
+                    <li><a href="aitechnology.html">AI Technology</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="careers.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/183hn7Hs3v/" target="_blank"><img class="social-png" src="facebook.webp" alt="" srcset=""></a> <!-- Facebook -->
+                    <a href="https://www.instagram.com/tulsa_automation?utm_source=qr&igsh=eTNmYTZmajl2ZWN2" target="_blank"><img class="social-png" src="instagram.jpeg" alt="" srcset=""></a> <!-- instagram -->
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyright"> © 2025 TULSA. All Rights Reserved.</div>
+    </footer>
+    <!-- Footer Section -->
+    <!-- <footer>
+        <p>Contact us: <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p>
+    </footer> -->
+</body>
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(n) {
+        if (n >= totalSlides) index = 0;
+        else if (n < 0) index = totalSlides - 1;
+        else index = n;
+        document.getElementById('slider').style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    function nextSlide() {
+        showSlide(index + 1);
+    }
+
+    function prevSlide() {
+        showSlide(index - 1);
+    }
+
+
+    const navbarBtn = document.getElementById('navbar-btn');
+    let condition = false;
+    navbarBtn.addEventListener('click', () => {
+        const navbar = document.querySelector('nav');
+        const header = document.querySelector('header');
+        if (condition == false) {
+            navbar.classList.add('active')
+            header.classList.add('active')
+            condition = true;
+        } else {
+            navbar.classList.remove('active')
+            header.classList.remove('active')
+            condition = false;
+        }
+    })
+</script>
+
+</html>

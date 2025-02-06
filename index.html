@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your page description here for better SEO">
+    <meta name="keywords" content="SEO, HTML, structure, website, optimization">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="A brief description of your page content">
+    <meta property="og:image" content="URL_to_image">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta name="robots" content="index, follow">
+    <title>TULSA - AUTOMATION</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon for the website -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Structured Data (JSON-LD) for better SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Your Page Title",
+            "url": "https://www.yourwebsite.com",
+            "description": "A brief description of your page content"
+        }
+    </script>
+</head>
+
+<style>
+    .slider-container {
+        position: relative;
+        width: 80%;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        min-height: 80vh;
+    }
+
+    .slide:nth-child(1) {
+        background: url('slider1.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slide:nth-child(2) {
+        background: url('slider2.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slide:nth-child(3) {
+        background: url('slider3.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slide:nth-child(4) {
+        background: url('slider4.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .slide img {
+        width: 100%;
+        display: block;
+    }
+
+    .buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 30px 15px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .btn:first-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .btn:last-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #about {
+        font-family: var(--font-family);
+        background-color: #dedede;
+    }
+
+    section {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #about .container {
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin: 40px 0;
+        background-color: #fff;
+    }
+
+    #about .container .left-area {
+        padding: 50px;
+        width: 50%;
+
+    }
+
+    #about .container .right-area {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #about .container .right-area img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .5s;
+    }
+
+    #about .container .right-area img:hover {
+        transform: scale(1.2);
+    }
+
+    @media screen and (max-width: 908px) {
+        #about .container {
+            flex-direction: column;
+        }
+
+        #about .container .left-area {
+            width: 100%;
+        }
+
+        #about .container .right-area {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        #about .container .right-area img {
+            width: 100%;
+        }
+    }
+
+
+    #womens-safety-section {
+        padding: 30px 50px;
+    }
+
+    #womens-safety-card-section .womens-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 120px;
+    }
+
+    #womens-safety-card-section .womens-container h1 {
+        font-size: 20px;
+        padding: 50px 0;
+        font-weight: 500;
+    }
+
+    #womens-safety-card-section .womens-container .card {
+        position: relative;
+        width: 48%;
+        height: 400px;
+        overflow: hidden;
+        background: #000;
+        background-size: cover;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 0 5px 40px #000000b7;
+    }
+
+    #womens-safety-card-section .womens-container .card:last-child {
+        width: 100%;
+    }
+
+    #womens-safety-card-section .womens-container .card::before {
+        content: '';
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #00000082;
+        top: 0;
+    }
+
+    #womens-safety-card-section .womens-container .card h1 {
+        padding: 20px;
+        color: #fff;
+        font-weight: 500;
+        z-index: 2;
+    }
+
+    #womens-safety-card-section .womens-container .card .details {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, #000, transparent);
+        bottom: -100%;
+        transition: .3s;
+        color: #fff;
+        z-index: 1;
+    }
+
+    #womens-safety-card-section .womens-container .card:hover .details {
+        bottom: 0;
+    }
+
+    #womens-safety-card-section .womens-container .card:hover .details ul {
+        position: absolute;
+        bottom: 0%;
+        margin: 40px;
+    }
+
+
+    @media screen and (max-width: 537px) {
+        #logo{
+            padding: 0;
+        }
+        #logo img {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 666px) {
+        
+    #womens-safety-card-section .womens-container h1 {
+        font-size: 14px;
+    }
+        
+    #womens-safety-card-section .womens-container .card h1 {
+        font-size:14px;
+    }
+    #womens-safety-card-section .womens-container .card:hover .details ul {
+    margin: 30px;
+}
+    }
+    @media screen and (max-width: 1139px) {
+        #womens-safety-card-section .womens-container {
+            padding: 0 40px;
+        }
+    }
+    @media screen and (max-width: 913px) {
+        #womens-safety-card-section .womens-container {
+            padding: 0 0px;
+            flex-direction: column;
+        }
+        #womens-safety-card-section .womens-container .card{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: 565px) {
+        #about .container .left-area {
+    padding: 20px;
+}
+    }
+
+
+
+    .company-partners-container {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+        margin: 30px 0 0 0;
+    }
+
+    .company-partners-container span {
+        position: absolute;
+        color: #fff;
+        min-width: 25%;
+        margin: 0 10px;
+        height: 75%;
+        left: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-size: 30px;
+        animation: animate 25s linear infinite;
+        transition: .2s;
+        margin: 20px 0;
+    }
+
+    .company-partners-container span img {
+        height: 100%;
+    }
+
+    .company-partners-container span:nth-child(1) {
+        animation-delay: calc(25s / 7 * (7 - 1) * -1);
+    }
+
+    .company-partners-container span:nth-child(2) {
+        animation-delay: calc(25s / 7 * (7 - 2) * -1);
+    }
+
+    .company-partners-container span:nth-child(3) {
+        animation-delay: calc(25s / 7 * (7 - 3) * -1);
+    }
+
+    .company-partners-container span:nth-child(4) {
+        animation-delay: calc(25s / 7 * (7 - 4) * -1);
+    }
+
+    .company-partners-container span:nth-child(5) {
+        animation-delay: calc(25s / 7 * (7 - 5) * -1);
+    }
+
+    .company-partners-container span:nth-child(6) {
+        animation-delay: calc(25s / 7 * (7 - 6) * -1);
+    }
+
+    .company-partners-container span:nth-child(7) {
+        animation-delay: calc(25s / 7 * (7 - 7) * -1);
+    }
+
+    @keyframes animate {
+        from {
+            left: 100%;
+        }
+
+        to {
+            left: -100%;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="tulsa">
+                    TULSA
+                </div>
+                <p>AUTOMATION</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="accesscontrol.html">Access Control</a></li>
+                    <li><a href="advancedsystem.html">Advanced System</a></li>
+                    <li><a href="aitechnology.html">AI Technology</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </nav>
+
+            <button id="navbar-btn"><img src="navigation-bar.png" alt=""></button>
+        </div>
+    </header>
+
+
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="prevSlide()">&#10094;</button>
+            <button class="btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <section id="logo">
+        <img src="company logo/logo.jpg" alt="">
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="left-area">
+                <span class="highlight-text">Tulsa Automation LLP</span>
+                offers cutting-edge security services including
+                intruder detection, facial recognition , and other advanced surveillance
+                solutions designed to protect your property and assets. Our
+                AI-driven intruder detection systems use
+                motion sensors, smart analytics, and
+                real-time alerts to identify unauthorized access and provide immediate
+                notifications, ensuring quick responses. The
+                facial recognition technology enhances security by automatically
+                identifying and verifying individuals at entry points, enabling
+                contactless access control and improving overall safety. Our solutions
+                are built to integrate seamlessly with existing security infrastructures, offering scalable, reliable,
+                and
+                real-time monitoring for both commercial and residential properties. With
+                advanced analytics and
+                intelligent automation, Tulsa Automation LLP ensures a
+                proactive, 24/7 security solution to safeguard your premises.
+            </div>
+
+            <div class="right-area">
+                <img src="aboutbg.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="womens-safety-card-section">
+        <div class="womens-container">
+
+            <h1>TULSA Automation LLP enhances women's safety through its AI-based security solutions, including
+                push-button alerts, smart surveillance, and real-time monitoring. Here’s how these technologies work:
+            </h1>
+            <div class="card" style="background: url('emergency.jpg'); background-size: cover;">
+                <h1 style="color: #5b5b5b;">1. Emergency Push Buttons (Panic Buttons)</h1>
+                <div class="details">
+                    <ul>
+                        <li>Installed in public areas, workplaces, and residential buildings.</li>
+                        <li>A single press sends an immediate distress signal to security teams or emergency responders.
+                        </li>
+                        <li>Can be integrated with CCTV to capture live footage when pressed.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card"
+                style="background: url('facerecognition.avif');background-size: cover;">
+                <h1>2. AI-Powered CCTV & Facial Recognition</h1>
+                <div class="details">
+                    <ul>
+                        <li>Smart cameras with AI can detect unusual movements, aggression, or distress signals.</li>
+                        <li>Facial recognition helps track known offenders and alert authorities.</li>
+                        <li>Auto-tracking ensures continuous monitoring of a person in distress.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card" style="background: url('mobilealert.jpg');background-size: cover;">
+                <h1>3. Mobile App & Remote Alerts</h1>
+                <div class="details">
+                    <ul>
+                        <li>A mobile app linked to security systems allows women to send SOS alerts.</li>
+                        <li>Push notifications inform nearby security personnel for quick action.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background: url('streetlight.webp');background-size: cover;">
+                <h1>4. Smart Street Lighting & Geo-Fencing</h1>
+                <div class="details">
+                    <ul>
+                        <li>Automated lights brighten up when movement is detected in dark areas.</li>
+                        <li>Geo-fencing alerts security teams when someone enters restricted zones.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card"
+                style="background: url('announcement.jpg');background-size: cover;">
+                <h1 style="color: #5b5b5b;">5. Integrated Public Announcement System</h1>
+                <div class="details">
+                    <ul>
+                        <li>Can be triggered with push-button alerts to warn or deter potential threats.</li>
+                        <li>Security personnel can communicate with the affected individual instantly.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="company-partners-container">
+        <span><img src="akuvox.png" alt=""></span>
+        <span><img src="grandstream.png" alt=""></span>
+        <span><img src="hikvision.png" alt=""></span>
+        <span><img src="honeywell.png" alt=""></span>
+        <span><img src="netgear.png" alt=""></span>
+        <span><img src="schrack.png" alt=""></span>
+        <span><img src="unv.png" alt=""></span>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Sco 32-33 & 34 2nd floor, Idea cowork,
+                    Near to DC Office, next to Axis Bank, 17C,
+                    Sector 17, Chandigarh, 160017
+
+                </p>
+                <p>Official Email:  tulsallp@gmail.com</p>
+                <p>Email:  manjot@tulsa.co.in</p>
+                <p>Phone: 62835-25403</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="accesscontrol.html">Access Control</a></li>
+                    <li><a href="advancedsystem.html">Advanced System</a></li>
+                    <li><a href="aitechnology.html">AI Technology</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="careers.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/183hn7Hs3v/" target="_blank"><img class="social-png"
+                            src="facebook.webp" alt="" srcset=""></a> <!-- Facebook -->
+                    <a href="https://www.instagram.com/tulsa_automation?utm_source=qr&igsh=eTNmYTZmajl2ZWN2"
+                        target="_blank"><img class="social-png" src="instagram.jpeg" alt="" srcset=""></a>
+                    <!-- instagram -->
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyright"> © 2025 TULSA. All Rights Reserved.</div>
+    </footer>
+    <!-- Footer Section -->
+    <!-- <footer>
+        <p>Contact us: <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p>
+    </footer> -->
+</body>
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(n) {
+        if (n >= totalSlides) index = 0;
+        else if (n < 0) index = totalSlides - 1;
+        else index = n;
+        document.getElementById('slider').style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    setInterval(() => {
+        showSlide(index + 1)
+    }, 6000);
+
+    function nextSlide() {
+        showSlide(index + 1);
+    }
+
+    function prevSlide() {
+        showSlide(index - 1);
+    }
+</script>
+<script src="script.js"></script>
+
+</html>

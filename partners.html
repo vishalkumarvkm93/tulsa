@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your page description here for better SEO">
+    <meta name="keywords" content="SEO, HTML, structure, website, optimization">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="A brief description of your page content">
+    <meta property="og:image" content="URL_to_image">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta name="robots" content="index, follow">
+    <title>TULSA - AUTOMATION</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon for the website -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Structured Data (JSON-LD) for better SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Your Page Title",
+            "url": "https://www.yourwebsite.com",
+            "description": "A brief description of your page content"
+        }
+    </script>
+</head>
+
+<style>
+    #partners {
+        position: relative;
+        min-height: 100vh;
+        display: block;
+        font-family: var(--font-family);
+        overflow: hidden;
+        color: #5b5b5b;
+        background: linear-gradient(359deg, white, #a8d1ff);
+    }
+    #partners .main-partners{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 80px;
+    }
+    #partners .main-partners .card{
+        background-color: #ffffffa3;
+        width: 650px;
+        border-radius: 20px;
+        padding: 20px 30px;
+        margin: 10px;
+        overflow: hidden;
+    }
+    #partners .main-partners .card .name{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #partners .main-partners .card .post{
+        font-size: 20px;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    #partners .main-partners .card .description p{
+        font-size: 14px;
+    }
+    #partners .main-partners .card .profile-img img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    
+
+
+
+
+
+
+    @media screen and (max-width: 827px){
+        #partners .main-partners {
+            display: block;
+        }
+        #partners .main-partners .card{
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .company-partners-container span{
+            width: 200px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="tulsa">
+                    TULSA
+                </div>
+                <p>AUTOMATION</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="accesscontrol.html">Access Control</a></li>
+                    <li><a href="advancedsystem.html">Advanced System</a></li>
+                    <li><a href="aitechnology.html">AI Technology</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </nav>
+
+            <button id="navbar-btn"><img src="navigation-bar.png" alt=""></button>
+        </div>
+    </header>
+
+    <section id="partners">
+        <div class="main-partners">
+
+            <div class="card">
+                <div class="profile-img">
+                    <img src="sukhdev.jpg" alt="">
+                </div>
+                <div class="name">SUKHDEV</div>
+                <div class="post">Director</div>
+                <div class="description">
+                    <p>
+                        Sukhdev Singh, the driving force behind Tulsa Automation, brings over three decades of
+                        invaluable engineering experience to the company. Founded in 2023, Tulsa Automation benefits
+                        from Mr. Singh's extensive background in providing engineering services to manufacturing plants
+                        both in India and internationally. His career spans numerous projects, including significant
+                        contributions to the sugar industry in Kenya, giving him a unique perspective on the challenges
+                        and opportunities within diverse industrial settings. This global exposure has honed his ability
+                        to understand and address the specific needs of clients across different sectors. Mr. Singh's
+                        deep understanding of manufacturing processes, coupled with his commitment to innovation, forms
+                        the cornerstone of Tulsa Automation's mission. He is passionate about leveraging cutting-edge
+                        technologies to optimize operations, enhance efficiency, and deliver tailored automation
+                        solutions that empower businesses to thrive in today's competitive landscape. His leadership
+                        ensures that Tulsa Automation provides clients with not only technical expertise but also a
+                        strategic partner dedicated to their long-term success. This rich history in industrial
+                        engineering positions Tulsa Automation as a trusted provider of reliable and effective
+                        automation solutions.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="profile-img">
+                    <img src="manjot.jpg" alt="">
+                </div>
+                <div class="name">MANJOT</div>
+                <div class="post">CEO</div>
+                <div class="description">
+                    <p>
+                        Manjot is a seasoned security and surveillance professional with over 14 years of experience,
+                        offering a comprehensive suite of services encompassing business development, project
+                        management, and expert security consulting. His background includes successful tenures at
+                        industry leaders like Honeywell and Hikvision, where he consistently drove sales, led complex
+                        projects, and crafted tailored solutions for clients across Punjab and Jammu & Kashmir.
+                        Currently, as a distribution partner for Polestar CCTV and Uniview, Manjot leverages this
+                        extensive expertise to provide cutting-edge, reliable security systems to meet the diverse needs
+                        of businesses and individuals in Chandigarh, ensuring access to the latest technologies and
+                        unparalleled quality. His academic credentials include an MBA in International Business from
+                        Panjab University and a BE in Electrical, Electronics, and Communications Engineering from
+                        Chandigarh Engineering College.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Sco 32-33 & 34 2nd floor, Idea cowork,
+                    Near to DC Office, next to Axis Bank, 17C,
+                    Sector 17, Chandigarh, 160017
+
+                    </p>
+                    <p>Official Email:  tulsallp@gmail.com</p>
+                    <p>Email:  manjot@tulsa.co.in</p>
+                <p>Phone: 62835-25403</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="accesscontrol.html">Access Control</a></li>
+                    <li><a href="advancedsystem.html">Advanced System</a></li>
+                    <li><a href="aitechnology.html">AI Technology</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="careers.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/183hn7Hs3v/" target="_blank"><img class="social-png" src="facebook.webp" alt="" srcset=""></a> <!-- Facebook -->
+                    <a href="https://www.instagram.com/tulsa_automation?utm_source=qr&igsh=eTNmYTZmajl2ZWN2" target="_blank"><img class="social-png" src="instagram.jpeg" alt="" srcset=""></a> <!-- instagram -->
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyright"> © 2025 TULSA. All Rights Reserved.</div>
+    </footer>
+    <!-- Footer Section -->
+    <!-- <footer>
+        <p>Contact us: <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p>
+    </footer> -->
+</body>
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(n) {
+        if (n >= totalSlides) index = 0;
+        else if (n < 0) index = totalSlides - 1;
+        else index = n;
+        document.getElementById('slider').style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    function nextSlide() {
+        showSlide(index + 1);
+    }
+
+    function prevSlide() {
+        showSlide(index - 1);
+    }
+
+
+    const navbarBtn = document.getElementById('navbar-btn');
+    let condition = false;
+    navbarBtn.addEventListener('click', () => {
+        const navbar = document.querySelector('nav');
+        const header = document.querySelector('header');
+        if (condition == false) {
+            navbar.classList.add('active')
+            header.classList.add('active')
+            condition = true;
+        } else {
+            navbar.classList.remove('active')
+            header.classList.remove('active')
+            condition = false;
+        }
+    })
+</script>
+
+</html>
